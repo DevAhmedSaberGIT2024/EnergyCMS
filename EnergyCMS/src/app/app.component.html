@@ -1,0 +1,30 @@
+<!-- Splash Screen -->
+<div *ngIf="showSplash" class="splash-screen d-flex justify-content-center align-items-center vh-100">
+  <div class="text-center d-flex flex-column align-items-center">
+    <img src="ESIcon64x,64x.png" alt="Energy Logo" class="splash-icon mb-3" />
+    <div class="circle-loader"></div>
+    <h1 class="mt-4 text-white">مرحبًا بكم في ENERGY</h1>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div *ngIf="!showSplash" id="main-content" class="main-content d-flex justify-content-center align-items-center vh-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card text-center blue shadow-lg p-4">
+          <i class="bi bi-cart-fill"></i>
+          <h3>Ecommerce</h3>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card text-center purple shadow-lg p-4">
+          <i class="bi bi-app-indicator"></i>
+          <h3>Pro Application</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
